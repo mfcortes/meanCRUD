@@ -18,5 +18,5 @@ app.use(cors({origin: 'http://localhost:4200'}));
 app.use('/api/employes/',require('./routes/employee.routes.js'));
 
 app.listen(app.get('port'), () => {
-    console.log(`Escuchando en POrt ${app.get('port')}`);
+    console.log(`Escuchando en  http://localhost:${app.get('port')}/api/employes/`);
 })

@@ -25,6 +25,8 @@ export class EmployeService {
   }
 
   putEmployee(employee: Employee){
+    console.log('SE TRATA DE HACER PUT');
+    //console.log(`${this.URL_API} + ${employee._id}, ${employee.name}`);
     return this.http.put(this.URL_API + `${employee._id}`, employee );
   }
 
